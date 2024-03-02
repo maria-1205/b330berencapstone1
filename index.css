@@ -10,9 +10,9 @@ body{
   font-family: 'Young Serif', serif;
 }
 
-/*.background{
-  background-color: darkolivegreen;
-}*/
+.background{
+  background-color: #E1F0DA;
+}
 
 .p-0 {
   padding: 0 !important;
@@ -89,4 +89,42 @@ body{
 }
 .text-dark {
   color:black; !important;
+}
+
+.image {
+    width: 500px; /* Adjust the width of the container */
+    height: 500px; /* Adjust the height of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.bg-custom {
+  background-color: #99BC85 !important;
+}
+
+.text-color{
+  color: #3A4D39 !important;
+}
+
+.image-container {
+    width: 100%;
+    height: 500px; /* Adjust the height of the container */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding-top: 3px !important; /* Adjust the top padding as needed */
 }

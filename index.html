@@ -23,59 +23,62 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
-<body style="background-image: url('https://images.hdqwalls.com/download/polygonal-abstract-red-dark-background-eo-1152x864.jpg'); background-size: cover; ">
+<body class="background">
 
 	<!-- NavBar Start -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-custom sticky-top">
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="#">
 	      <img class="mx-3" src="https://clipart-library.com/images/di45bRbLT.png" width="50" height="30">
 	    </a>
 	    <div class="d-flex justify-content-end">
-		    <div class="collapse navbar-collapse" id="navbarNav">
-		      <ul class="navbar-nav ms-auto me-3">
-		        <li class="nav-item">
-		          <a class="nav-link active" aria-current="page" href="#landing">Home</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#projects">Projects</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link " href="#Tools">Tools</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#Contact">Contact</a>
-		        </li>
-		        
-		      </ul>
-		    </div>
+	      <div class="collapse navbar-collapse" id="navbarNav">
+	        <ul class="navbar-nav ms-auto me-3">
+	          <li class="nav-item">
+	            <a class="nav-link active" style="color: #3A4D39;" aria-current="page" href="#landing">Home</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" style="color: #3A4D39;" href="#projects">Projects</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link " style="color: #3A4D39;" href="#Tools">Tools</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" style="color: #3A4D39;" href="#Contact">Contact</a>
+	          </li>
+	          
+	        </ul>
+	      </div>
 	    </div>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	  </div>
 	</nav>
+
 	<!-- NavBar End -->
 
 	<!-- Home Start -->
-
-	<div class="container-fluid px-5 py-5 bg-transparent text-light mb-5 has-bg-img" id="landing">
-		<div class="row d-flex justify-items-start" >
-			<div class="col-md-5 col-sm-12 mt-3 order-1 order-md-1">
-				<img src="./image/trial.jpg" class="img-fluid opacity-75">
-			</div>
-			<div class="col-md-7 col-sm-12 order-2 order-md-2 d-flex flex-column justify-content-center align-items-center">
-				<h2>Ma. Teresa Beren</h2>
-				<p>Full-Stack Developer</p>
-			</div>
-		</div>
+	<div class="container-fluid px-5 py-5 text-light mb-5 has-bg-img" id="landing">
+	    <div class="row d-flex justify-items-start">
+	        <div class=" d-flex justify-content-center align-items-center">
+	            <!-- Adding a container to center the image -->
+	            <div class="image">
+	                <img src="./image/trial.jpg" class="img-fluid rounded-circle">
+	            </div>
+	        </div>
+	        <div class="d-flex flex-column justify-content-center align-items-center pt-4">
+	            <h2 class = "text-color">Ma. Teresa Beren</h2>
+	            <p class = "text-color">Full-Stack Developer</p>
+	        </div>
+	    </div>
 	</div>
+	<!-- Home End -->
 
-	<!-- Home Start -->
 
 	<!-- Project Start -->
 	<div id="projects" class="text-center text-light my-5">
-		<h2 class="my-3">Projects</h2>
+		<h2 class="my-3 text-color">Projects</h2>
 		<div class="carousel slide container mb-5" data-ride="carousel" id=project>
 		  <ol class="carousel-indicators">
 		    <li data-target="#project" data-slide-to="0" class="active"></li>
@@ -116,32 +119,35 @@
 	<!-- Project End -->
 
 	<!-- Tools Start -->
-	<div id="Tools" class=" min-vh-100 p-5 text-center text-light">
-								<h2 class="mb-5 ">Tools Use</h2>
-								<div class="d-flex justify-content-around">
-									<!-- HTML Card Start -->
-									<div class="card bg-transparent border border-light text-light col-sm-12 order-sm-1 col-md-4" >
-										<img src="https://miro.medium.com/v2/resize:fit:5120/1*l4xICbIIYlz1OTymWCoUTw.jpeg" class="card-img-top mt-2">
-									  <div class="card-body">
-									    <h5 class="card-title">HTML, JS && CSS</h5>
-									    
-									    <p class="card-text">As a web developer, the three main languages we use to build websites are HTML, CSS, and JavaScript. JavaScript is the programming language, we use HTML to structure the site, and we use CSS to design and layout the web page. These days, CSS has become more than just a design language, though.</p>
-									  </div>
-									</div>
-								
-									<div class="card bg-transparent border border-light text-light col-sm-12 order-sm-2 col-md-4">
-										<img src="./image/Untitled17_20231025195943.png" class="card-img-top mt-2">
-									  <div class="card-body">
-									    <h5 class="card-title">Other Tools</h5>
-									    
-									    <p class="card-text">These are the other tools used for web development.</p>
-									    
-									  </div>
-									</div>
-									
-								</div>
-							</div>
+	<div id="Tools" class="min-vh-100 text-center text-light py-5">
+	    <h2 class="m-5 text-color">Tools Use</h2>
+	    <div class="d-flex justify-content-around">
+
+
+	        <!-- HTML Card Start -->
+	        <div class="card bg-custom border border-light text-light col-sm-12 order-sm-1 col-md-4">
+	            <div class="image-container">
+	                <img src="https://miro.medium.com/v2/resize:fit:5120/1*l4xICbIIYlz1OTymWCoUTw.jpeg" class="card-img-top mt-3 mb-4">
+	            
+	                <h5 class="card-title text-color">HTML, JS && CSS</h5>
+	                <p class="card-text">As a web developer, the three main languages we use to build websites are HTML, CSS, and JavaScript. JavaScript is the programming language, we use HTML to structure the site, and we use CSS to design and layout the web page. These days, CSS has become more than just a design language, though.</p>
+	            </div>
+	        </div>
+
+	        <div class="card bg-custom border border-light text-light col-sm-12 order-sm-2 col-md-4">
+	            <div class="image-container">
+	                <img src="./image/Untitled17_20231025195943.png" class="card-img-top mt-2">
+	            </div>
+	            <div class="card-body"> <!-- Added pb-3 class for bottom padding -->
+	                <h5 class="card-title text-color">Other Tools</h5>
+	                <p class="card-text">These are the other tools used for web development.</p>
+	            </div>
+	        </div>
+
+	    </div>
+	</div>
 	<!-- Tools End -->
+
 
 	<!-- Contact Start -->
 
@@ -150,24 +156,24 @@
 		
 			<div class="container">
 				<div class="row d-flex justify-content-start ">
-					<h2 class="text-light text-center my-3">Contact Me</h2>
+					<h2 class="text-light text-center my-3 text-color">Contact Me</h2>
 			        <form id="form-col " class=" text-light ">
 			                       
 				                <div class="mb-3 col-md-12 col-sm-12">
-				                      <label for="fullname" class="form-label">Full Name</label>
+				                      <label for="fullname" class="form-label text-color">Full Name</label>
 				                      <input type="text" class="form-control" autocomplete="on" id="fullname" required >
 				                </div>
 				                <div class="mb-3 col-md-12 col-sm-12">
-				                       <label for="email" class="form-label">Email Address</label>
+				                       <label for="email" class="form-label text-color">Email Address</label>
 				                      <input type="email" class="form-control" id="email" name="email" required>
 				                </div>
 				                <div class="mb-3 col-md-12 col-sm-12">
-				                      <label for="contactNumber" class="form-label">Contact Number</label>
+				                      <label for="contactNumber" class="form-label text-color">Contact Number</label>
 				                      <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
 				                </div>
 				                
 				                <div class="mb-3 col-md-12 col-sm-12">
-				                      <label for="message" class="form-label">Message</label>
+				                      <label for="message" class="form-label text-color">Message</label>
 				                      <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
 				                </div>
 				                <div class="mb-3 col-md-12 col-sm-12">
@@ -203,7 +209,7 @@
 
 
 	<!-- Footer Start -->
-	<footer class="bg-transparent d-flex flex-column align-items-center mt-5 mb-3 text-white ">
+	<footer class="bg-custom d-flex flex-column align-items-center mt-5 text-color ">
 		   		<div>Ma. Teresa Beren || Full-Stack Developer</div>
                 <div>For Academic Purposes Only 2023</div>
 	</footer>
